@@ -7,14 +7,12 @@ import tensorflow as tf
 
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
-
 """
 创建权重
 """
 def weight_variable(shape):
     inital = tf.truncated_normal(shape, stddev=0.1)  # 生成一个截断的正态分布
     return tf.Variable(inital)
-
 
 def bias_variable(shape):
     inital = tf.constant(0.1, shape=shape)
