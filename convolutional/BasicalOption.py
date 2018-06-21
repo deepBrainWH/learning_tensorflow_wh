@@ -43,6 +43,8 @@ with tf.Session() as sess:
     pooled_M = sess.run(pool, feed_dict={x: M})
     bias = sess.run(bias, feed_dict={x: M})
     print("bias is:\n", bias.shape)
+
+    print("hello word!")
     # print("convoluted_M:\n", convoluted_M.shape)
     # print("pooled_M:\n", pooled_M)
 
