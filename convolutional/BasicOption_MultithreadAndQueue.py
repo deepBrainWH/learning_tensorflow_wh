@@ -14,4 +14,5 @@ with tf.Session() as sess:
     threads = tf.train.start_queue_runners(sess=sess,coord=coord)
     for _ in range(20): print(sess.run(out_tensor))
     coord.request_stop()
+    print("hello word")
     coord.join(threads)

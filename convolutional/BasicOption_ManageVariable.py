@@ -18,5 +18,6 @@ with tf.variable_scope("", reuse=True):
     print(v2.name)
 sess = tf.InteractiveSession()
 tf.global_variables_initializer().run()
+
 print(v2.eval())
 sess.close()

@@ -41,6 +41,7 @@ with tf.Session() as sess:
             if (conv_res[i, j]<=0) | (conv_res[i, j]>=255):
                 print("%d and %d is failed!"%(i,j))
     cv2.imshow("image", conv_res)
+
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
